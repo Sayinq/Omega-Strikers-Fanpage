@@ -1,11 +1,13 @@
 import React from 'react';
+import Home from './page/Home';
+import NavbarComp from './components/NavbarComp';
 
-function App() {
+export default function App() {
 
   return (
-    <main className="overflow-x-hidden">
-    </main>
+    <>
+      <NavbarComp />
+      <Home />
+    </>
   )
 }
-
-export default App
