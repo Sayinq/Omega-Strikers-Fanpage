@@ -5,10 +5,12 @@ import {
     NavbarContent,
     NavbarItem
 } from '@nextui-org/react'
+import '../index.css'
+
 
 export default function NavbarComp() {
     return (
-      <Navbar className="bg-[#131313]">
+      <Navbar id="navbarcomp" className="sticky bg-[#131313]">
         <NavbarBrand>
           <h1 className="font-bold text-2xl uppercase">ody logo</h1>
         </NavbarBrand>
