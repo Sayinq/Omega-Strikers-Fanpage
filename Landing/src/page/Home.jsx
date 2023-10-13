@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
 
                 {/* Character Selection carousel */}
-                <div className="flex flex-wrap w-full max-w-[800px] h-fit items-center justify-center gap-4 py-16">
+                <div className="flex flex-wrap w-full max-w-[800px] h-fit items-center justify-center lg:gap-4 md:gap-5 gap-4 py-16">
                     <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Aimi.png" />
                     <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Asher.png" />
                     <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Atlas.png" />
@@ -108,7 +108,7 @@ const Home = () => {
                     <img src="./src/assets/skins/IdolAimi.png" className="sm:scale-[5] scale-[10] translate-y-[180px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/OrbEstelle.png" className="sm:scale-[5] scale-[6] translate-y-[175px] translate-x-[25px]" />
+                    <img src="./src/assets/skins/OrbEstelle.png" className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
                     <img src="./src/assets/skins/OrbLuna.png" className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
@@ -133,16 +133,19 @@ const Home = () => {
                 </div>
             </div>
             <div id="skin-text" className="flex flex-col absolute justify-center items-center w-full h-fit -translate-y-[45px]">
-                <h2 className="font-bold text-[48px] text-[#FDF0EE]">Skin Hook</h2>
-                <p className="font-medium text-[20px] text-slate-500">Some description hook text.</p>
+                <h2 className="font-bold lg:text-[68px] text-[48px] text-[#FDF0EE]">Keep it fresh</h2>
+                <p className="font-medium text-[20px] text-slate-500">With plenty of Emotes, Titles, and Skins</p>
             </div>
         </section>
-        <section id="maps" className="w-screen h-[600px] bg-[#131313]">
-            {/* Gif of Kill Ai-Mi map */}
+        <section id="customization" className="w-screen h-[600px] bg-[#131313]">
+            {/* Section to show off Emotes, Titles, and Nameplates  */}
+        </section>
+        <section id="maps">
+            {/* Gif of Kill on Ai-Mi map */}
 
-            {/*  */}
+            {/* Gif of door hit on any map */}
 
-            {/* Gif of Kill Ai-Mi map */}
+            {/* Gif of water cannon on Inky map */}
         </section>
     </main>
   )
