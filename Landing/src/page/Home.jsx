@@ -5,28 +5,29 @@ import { Avatar } from '@nextui-org/react'
 const Home = () => {
   return (
     <main className="overflow-x-hidden">
-
         {/* Hero Section, may change to just an image class */}
         <section id="hero" className="flex w-screen h-screen sm:max-h-[640px] max-h-[400px] justify-center items-center bg-[url('./src/assets/HeroArt.jpg')] bg-center bg-cover">
+            <img src="./src/assets/HeroLogo.png" className="2xl:flex hidden h-auto max-w-[600px] translate-y-8" />
         </section>
 
         {/* Make this into infinite scrolling component */}
-        <section id="img-carousel" className="w-screen h-[150px] bg-transparent lg:-translate-y-16 sm:-translate-y-20 -translate-y-12 z-10">
-            <div className="flex flex-row absolute bg-green-500 w-[200%] -translate-x-4 sm:h-[175px] h-auto py-12 -rotate-3">
+        <section id="img-carousel" className="w-screen h-[150px] bg-transparent 2xl:-translate-y-44 xl:-translate-y-16 lg:-translate-y-20 sm:-translate-y-20 -translate-y-12 z-10">
+            <div className="flex flex-row absolute bg-white w-[200%] -translate-x-4 2xl:h-[200px] sm:h-[175px] h-auto py-12 -rotate-3">
 
             </div>
         </section>
 
         {/* Footbrawl area, transparent with our logo splash art as the main bg*/}
-        <section id="footbrawl" className="flex flex-col w-screen h-auto justify-start items-center lg:-mt-32 sm:-mt-20 -mt-28 gap-y-4 px-4">
+        <section id="footbrawl" className="flex flex-col w-screen h-auto justify-start items-center 2xl:-mt-32 xl:-mt-12 lg:-mt-16 sm:-mt-20 -mt-28 gap-y-4 px-4">
             <div id="footbrawl-header" className="flex flex-col items-center justify-center">
                 <img id="x" src="./src/assets/characters/X.png" className="w-48 h-48" />
                 <div>
-                    <h2 className="font-black md:text-[64px] sm:text-5xl text-3xl bg-gradient-to-b from-[#E01377] to-[#AF0F5C] bg-clip-text text-transparent uppercase drop-shadow-md pb-4">Join the footbrawl!</h2>
+                    <h2 className="font-black lg:text-[70px] md:text-[60px] sm:text-5xl text-3xl bg-gradient-to-b from-[#E01377] to-[#AF0F5C] bg-clip-text text-transparent uppercase drop-shadow-md pb-4">Join the footbrawl!</h2>
                 </div>
             </div>
-            <div id="trailer-video" className="flex justify-center items-center max-w-[375px]">
+            <div id="trailer-video" className="flex justify-center items-center lg:max-w-[800px] lg:w-[800px] md:max-w-[650px] max-w-[375px]">
                 <iframe 
+                    id="video"
                     width="560" 
                     height="315" 
                     src="https://www.youtube.com/embed/C7H4MzV_ZbY?si=Z6vxf2f_p0qN-EqA" 
@@ -40,7 +41,7 @@ const Home = () => {
                     picture-in-picture; 
                     web-share" 
                     allowfullscreen 
-                    className="rounded-lg"
+                    className="rounded-lg lg:min-w-[800px] lg:min-h-[400px]"
                 />
             </div>
             <div id="download-links" className="flex flex-wrap justify-center items-center w-full h-auto py-2 lg:pb-16 pb-6">
@@ -54,8 +55,8 @@ const Home = () => {
         </section>
         
         {/* Character section, needs character changing component */}
-        <img src="./src/assets/pagedivider.png" className="absolute left-0 lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
-        <section id="characters" className="w-full h-fit bg-[#FDF0EE] p-8">
+        <img src="./src/assets/pagedivider.png" className="absolute left-0 3xl:-translate-y-[55px] 2xl:-translate-y-[70px] xl:-translate-y-[90px] lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
+        <section id="characters" className="w-full h-fit bg-[#FDF0EE] 3xl:mt-24 2xl:mt-12 p-8">
             <div id="characters-wrapper" className="flex flex-col w-full h-auto justify-center items-center sm:py-8">
                 
                 {/* Wrapper for top section of Character section */}
@@ -73,7 +74,7 @@ const Home = () => {
                 </div>
 
                 {/* Character Selection carousel */}
-                <div className="flex flex-wrap w-full max-w-[800px] h-fit items-center justify-center lg:gap-4 md:gap-5 gap-4 py-16">
+                <div id="character-select" className="flex flex-wrap w-full max-w-[800px] h-fit items-center justify-center lg:gap-4 md:gap-5 gap-4 py-16">
                     <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Aimi.png" />
                     <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Asher.png" />
                     <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Atlas.png" />
@@ -131,13 +132,45 @@ const Home = () => {
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
                     <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
                 </div>
+
+                {/* Hidden until lg */}
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/GamerJuliette.png" className="sm:scale-[5] scale-[10] translate-y-[200px] sm:-translate-x-[35px] -translate-x-[30px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/IdolAimi.png" className="sm:scale-[5] scale-[10] translate-y-[180px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/OrbEstelle.png" className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/OrbLuna.png" className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/PopKingKai.png" className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/RaindropEra.png" className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/SGaimi.png" className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/SARune.png" className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/SWAtlas.png" className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
+                </div>
+                <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
+                </div>
             </div>
             <div id="skin-text" className="flex flex-col absolute justify-center items-center w-full h-fit -translate-y-[45px]">
                 <h2 className="font-bold lg:text-[68px] text-[48px] text-[#FDF0EE]">Keep it fresh</h2>
                 <p className="font-medium text-[20px] text-slate-500">With plenty of Emotes, Titles, and Skins</p>
             </div>
         </section>
-        <section id="customization" className="w-screen h-[600px] bg-[#131313]">
+        <section id="customization" className="w-screen h-[600px] bg-[#131313] py-8">
             {/* Section to show off Emotes, Titles, and Nameplates  */}
         </section>
         <section id="maps">

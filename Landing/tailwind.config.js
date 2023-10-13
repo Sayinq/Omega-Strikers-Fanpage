@@ -12,6 +12,9 @@ export default {
       backgroundImage: {
         'hero-bg': "url('./src/assets/HeroArt.jpg')",
         'pattern-bg': "url('./src/assets/Pattern-BG.png')",
+      },
+      screens: {
+        '3xl': '1920px',
       }
     },
   },

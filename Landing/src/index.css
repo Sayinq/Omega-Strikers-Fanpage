@@ -8,7 +8,8 @@
   font-weight: 400;
   color-scheme: light dark;
   color: #2C2C2D;
-  background: url('./assets/Pattern-BG.png') repeat bottom;
+  background: url('./assets/Pattern-BG.png');
+  background-repeat: repeat;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -45,6 +46,11 @@ body {
   z-index: 90;
 }
 
+#video {
+  filter: drop-shadow(0px 5px 20px #131313);
+
+}
+
 #second-divider {
   z-index: 90;
 }
@@ -61,4 +67,13 @@ body {
 
 #skin-text {
   z-index: 80;
+}
+
+#character-select {
+  transition: all 0.5s ease-in-out linear;
+}
+
+#character-select #character:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out linear;
 }
