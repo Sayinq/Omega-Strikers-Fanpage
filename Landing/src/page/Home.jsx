@@ -1,6 +1,6 @@
 import React from 'react'
 import '../index.css'
-import HeroLogo from '../assets/HeroLogo.png'
+import { Avatar } from '@nextui-org/react'
 
 const Home = () => {
   return (
@@ -11,18 +11,18 @@ const Home = () => {
         </section>
 
         {/* Make this into infinite scrolling component */}
-        <section id="img-carousel" className="w-screen h-[150px] bg-transparent -translate-y-8 z-10">
-            <div className="flex flex-row absolute bg-green-500 w-[200%] -translate-x-4 h-auto py-12 -rotate-3">
+        <section id="img-carousel" className="w-screen h-[150px] bg-transparent lg:-translate-y-16 sm:-translate-y-20 -translate-y-12 z-10">
+            <div className="flex flex-row absolute bg-green-500 w-[200%] -translate-x-4 sm:h-[175px] h-auto py-12 -rotate-3">
 
             </div>
         </section>
 
         {/* Footbrawl area, transparent with our logo splash art as the main bg*/}
-        <section id="footbrawl" className="flex flex-col w-screen h-auto justify-start items-center -mt-28 gap-y-4 px-4">
+        <section id="footbrawl" className="flex flex-col w-screen h-auto justify-start items-center lg:-mt-32 sm:-mt-20 -mt-28 gap-y-4 px-4">
             <div id="footbrawl-header" className="flex flex-col items-center justify-center">
-                <img id="x" src="./src/assets/X.png" className="w-48 h-48" />
+                <img id="x" src="./src/assets/characters/X.png" className="w-48 h-48" />
                 <div>
-                    <h2 className="font-black sm:text-[64px] text-3xl bg-gradient-to-b from-[#E01377] to-[#AF0F5C] bg-clip-text text-transparent uppercase drop-shadow-md pb-4">Join the footbrawl!</h2>
+                    <h2 className="font-black md:text-[64px] sm:text-5xl text-3xl bg-gradient-to-b from-[#E01377] to-[#AF0F5C] bg-clip-text text-transparent uppercase drop-shadow-md pb-4">Join the footbrawl!</h2>
                 </div>
             </div>
             <div id="trailer-video" className="flex justify-center items-center max-w-[375px]">
@@ -43,7 +43,7 @@ const Home = () => {
                     className="rounded-lg"
                 />
             </div>
-            <div id="download-links" className="flex flex-wrap justify-center items-center w-full h-auto py-2 pb-6">
+            <div id="download-links" className="flex flex-wrap justify-center items-center w-full h-auto py-2 lg:pb-16 pb-6">
                 <a href=""><img src="./src/assets/applebutton.png" className="sm:max-w-[250px] max-w-[300px]"/></a>
                 <a href=""><img src="./src/assets/googlebutton.png" className="sm:max-w-[250px] max-w-[300px]"/></a>
                 <a href=""><img src="./src/assets/nintendobutton.png" className="sm:max-w-[250px] max-w-[300px]"/></a>
@@ -54,37 +54,45 @@ const Home = () => {
         </section>
         
         {/* Character section, needs character changing component */}
-        <img src="./src/assets/pagedivider.png" className="absolute left-0 -translate-y-8 w-screen h-fit rotate-180" />
+        <img src="./src/assets/pagedivider.png" className="absolute left-0 lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
         <section id="characters" className="w-full h-fit bg-[#FDF0EE] p-8">
-            <div id="characters-wrapper" className="flex flex-col w-full h-auto justify-center sm:py-8">
+            <div id="characters-wrapper" className="flex flex-col w-full h-auto justify-center items-center sm:py-8">
                 
                 {/* Wrapper for top section of Character section */}
                 <div id="top-wrapper" className="flex flex-wrap justify-center items-center">
-                    <div id="characters-info" className="flex flex-col justify-center sm:items-start items-center w-[430px] h-[360px] gap-y-4 px-4">
-                        <h1 className="font-bold text-black text-[48px] uppercase">Ai.Mi</h1>
+                    <div id="characters-info" className="flex flex-col justify-center lg:items-start items-center w-[430px] h-[360px] gap-y-4 px-4">
+                        <h1 className="font-bold text-black sm:text-[60px] text-[48px] uppercase">Ai.Mi</h1>
                         <p className="font-medium text-[20px] text-zinc-700 italics">A glitch mage who excels at controlling
                             the field with precise attacks
                             from a distance.
                         </p>
                     </div>
                     <div id="character-image" className="w-[430px] h-[360px] p-2 overflow-hidden object-contain">
-                        <img src="./src/assets/Aimi.png" className="" />
+                        <img src="./src/assets/characters/Aimi.png" className="" />
                     </div>
                 </div>
 
                 {/* Character Selection carousel */}
-                <div className="flex flex-wrap w-full h-fit items-center justify-center gap-x-2 py-16">
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
-                    <div id="character" className="bg-slate-500 rounded-full w-12 h-12"></div>
+                <div className="flex flex-wrap w-full max-w-[800px] h-fit items-center justify-center gap-4 py-16">
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Aimi.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Asher.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Atlas.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Drekar.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Dubu.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Era.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Estelle.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Finii.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Juliette.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Juno.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Kai.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Kazan.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Luna.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Octavia.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Rasmus.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Rune.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Vyce.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/X.png" />
+                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Zentaro.png" />
                 </div>
             </div>
         </section>
@@ -125,12 +133,16 @@ const Home = () => {
                 </div>
             </div>
             <div id="skin-text" className="flex flex-col absolute justify-center items-center w-full h-fit -translate-y-[45px]">
-                <h2 className="font-bold text-[48px] text-white">Skin Hook</h2>
+                <h2 className="font-bold text-[48px] text-[#FDF0EE]">Skin Hook</h2>
                 <p className="font-medium text-[20px] text-slate-500">Some description hook text.</p>
             </div>
         </section>
-        <section id="bottom-part" className="w-screen h-[600px] bg-[#131313]">
+        <section id="maps" className="w-screen h-[600px] bg-[#131313]">
+            {/* Gif of Kill Ai-Mi map */}
 
+            {/*  */}
+
+            {/* Gif of Kill Ai-Mi map */}
         </section>
     </main>
   )
