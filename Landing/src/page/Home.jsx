@@ -1,7 +1,8 @@
 import React from 'react'
 import '../index.css'
 import { Avatar } from '@nextui-org/react'
-import ImageCarousel from '../components/ImageCarousel'
+import { ImageCarousel }  from '../components/ImageCarousel';
+import { CharacterInteractive } from '../components/CharacterInteractive';
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
                     height="315" 
                     src="https://www.youtube.com/embed/C7H4MzV_ZbY?si=Z6vxf2f_p0qN-EqA" 
                     title="YouTube video player" 
-                    frameborder="0" 
+                    frameBorder="0" 
                     allow="accelerometer; 
                     autoplay; 
                     clipboard-write; 
@@ -41,7 +42,7 @@ const Home = () => {
                     gyroscope; 
                     picture-in-picture; 
                     web-share" 
-                    allowfullscreen 
+                    allowFullScreen 
                     className="rounded-lg lg:min-w-[800px] lg:min-h-[400px]"
                 />
             </div>
@@ -57,47 +58,9 @@ const Home = () => {
         
         {/* Character section, needs character changing component */}
         <img src="./src/assets/pagedivider.png" className="absolute left-0 3xl:-translate-y-[55px] 2xl:-translate-y-[70px] xl:-translate-y-[90px] lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
-        <section id="characters" className="w-full h-fit bg-[#FDF0EE] 3xl:mt-24 2xl:mt-12 p-8">
-            <div id="characters-wrapper" className="flex flex-col w-full h-auto justify-center items-center sm:py-8">
-                
-                {/* Wrapper for top section of Character section */}
-                <div id="top-wrapper" className="flex flex-wrap justify-center items-center">
-                    <div id="characters-info" className="flex flex-col justify-center lg:items-start items-center w-[430px] h-[360px] gap-y-4 px-4">
-                        <h1 className="font-bold text-black sm:text-[60px] text-[48px] uppercase">Ai.Mi</h1>
-                        <p className="font-medium text-[20px] text-zinc-700 italics">A glitch mage who excels at controlling
-                            the field with precise attacks
-                            from a distance.
-                        </p>
-                    </div>
-                    <div id="character-image" className="w-[430px] h-[360px] p-2 overflow-hidden object-contain">
-                        <img src="./src/assets/characters/Aimi.png" className="" />
-                    </div>
-                </div>
 
-                {/* Character Selection carousel */}
-                <div id="character-select" className="flex flex-wrap w-full max-w-[800px] h-fit items-center justify-center lg:gap-4 md:gap-5 gap-4 py-16">
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Aimi.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Asher.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Atlas.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Drekar.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Dubu.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Era.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Estelle.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Finii.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Juliette.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Juno.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Kai.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Kazan.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Luna.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Octavia.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Rasmus.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Rune.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Vyce.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/X.png" />
-                    <Avatar isBordered id="character" className="bg-slate-500 rounded-full sm:w-16 w-12 sm:h-16 h-12 cursor-pointer" src="./src/assets/characters/Zentaro.png" />
-                </div>
-            </div>
-        </section>
+        <CharacterInteractive />
+
         <img id="second-divider" src="./src/assets/pagedivider.png" className="absolute left-0 -translate-y-[5px] w-screen h-[40px]" />
         {/* Add scalability for scrolling to see more skins */}
         <section id="skin-showcase" className="w-screen h-auto overflow-y-hidden overflow-x-hidden">

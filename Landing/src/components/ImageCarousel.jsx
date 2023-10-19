@@ -12,7 +12,7 @@ const images = [
   'https://cdn.midjourney.com/db651aef-0408-4928-842c-0f1ecd1787b5/0_3_384_N.webp',
 ];
 
-const ImageCarousel = () => {
+export const ImageCarousel = () => {
   return (
     <div className="infinite-carousel">
       <Marquee gradient={false} speed={50} autoFill={true}> {/* Adjust the speed as needed */}
@@ -23,5 +23,3 @@ const ImageCarousel = () => {
     </div>
   );
 };
-
-export default ImageCarousel;
