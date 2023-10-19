@@ -1,6 +1,7 @@
 import React from 'react'
 import '../index.css'
 import { Avatar } from '@nextui-org/react'
+import ImageCarousel from '../components/ImageCarousel'
 
 const Home = () => {
   return (
@@ -12,8 +13,8 @@ const Home = () => {
 
         {/* Make this into infinite scrolling component */}
         <section id="img-carousel" className="w-screen h-[150px] bg-transparent 2xl:-translate-y-44 xl:-translate-y-16 lg:-translate-y-20 sm:-translate-y-20 -translate-y-12 z-10">
-            <div className="flex flex-row absolute bg-white w-[200%] -translate-x-4 2xl:h-[200px] sm:h-[175px] h-auto py-12 -rotate-3">
-
+            <div className="flex absolute bg-white w-[200%] -translate-x-4 2xl:h-[200px] h-[175px] -rotate-3 overflow-hidden">
+                <ImageCarousel />
             </div>
         </section>
 
