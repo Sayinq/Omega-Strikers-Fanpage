@@ -141,7 +141,7 @@ const characters = [
                     >
                         <motion.h1
                             id="character-name"
-                            className="font-bold text-black sm:text-[60px] text-[48px] uppercase"
+                            className="font-bold text-black sm:text-[60px] text-[48px] uppercase point-events-none select-none"
                             initial={headTextAnimation.initial}
                             animate={headTextAnimation.animate}
                             transition={headTextAnimation.transition}
@@ -150,7 +150,7 @@ const characters = [
                         </motion.h1>
                         <motion.p
                             id="character-desc"
-                            className="font-medium text-[20px] text-zinc-700 italics"
+                            className="font-medium text-[20px] text-zinc-700 italics point-events-none select-none"
                             initial={fadeAnimation.initial}
                             animate={fadeAnimation.animate}
                             transition={fadeAnimation.transition}

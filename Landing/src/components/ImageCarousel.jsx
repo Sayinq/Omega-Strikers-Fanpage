@@ -25,7 +25,7 @@ const images = [
 
 export const ImageCarousel = () => {
   return (
-    <div className="infinite-carousel h-auto">
+    <div className="infinite-carousel">
       <Marquee gradient={false} speed={50} autoFill={true}>
         {images.map((image, index) => (
           <img key={index} src={image} alt={`Image ${index}`}/>

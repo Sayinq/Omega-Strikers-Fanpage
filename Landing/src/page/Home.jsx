@@ -3,6 +3,7 @@ import '../index.css'
 import { Avatar } from '@nextui-org/react'
 import { ImageCarousel }  from '../components/ImageCarousel';
 import { CharacterInteractive } from '../components/CharacterInteractive';
+import MapSection from '../components/MapSection';
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
 
         {/* Make this into infinite scrolling component */}
         <section id="img-carousel" className="w-screen h-[150px] bg-transparent 2xl:-translate-y-44 xl:-translate-y-16 lg:-translate-y-20 sm:-translate-y-20 -translate-y-12 z-10">
-            <div className="flex absolute bg-gradient-to-r from-[#FFFFFF] to-[#AF0F5C] w-[200%] -translate-x-4 2xl:h-[200px] h-[175px] -rotate-3 overflow-hidden object-contain">
+            <div className="flex absolute bg-gradient-to-r from-[#FFFFFF] to-[#AF0F5C] w-[200%] -translate-x-4 2xl:h-[300px] h-[175px] -rotate-3 overflow-hidden object-contain">
                 <ImageCarousel />
             </div>
         </section>
@@ -130,12 +131,12 @@ const Home = () => {
                     <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
                 </div>
             </div>
-            <div id="skin-text" className="flex flex-col absolute justify-center items-center w-full h-fit -translate-y-[45px]">
+            <div id="skin-text" className="flex flex-col absolute justify-center items-center w-full h-fit -translate-y-[45px] point-events-none select-none">
                 <h2 className="font-bold lg:text-[68px] text-[48px] text-[#FDF0EE]">Keep it fresh</h2>
-                <p className="font-medium text-[20px] text-slate-500">With plenty of Emotes, Titles, and Skins</p>
+                <p className="font-medium text-[20px] text-slate-500 border-b-2 border-white pb-8">With plenty of Emotes, Titles, and Skins</p>
             </div>
         </section>
-        <section id="customization" className="flex justify-center w-screen h-auto bg-[#131313] px-8 pt-36 overflow-hidden">
+        <section id="customization" className="flex justify-center w-screen h-auto bg-[#131313] px-8 2xl:py-48 py-36 overflow-hidden point-events-none select-none">
             {/* Section to show off Emotes, Titles, and Nameplates  */}
             <div id="customization-wrapper" className="flex flex-wrap items-center justify-evenly w-full max-w-[1280px] h-full xl:gap-x-16 gap-y-12 py-8">
                 <div id="customization-module" className="flex lg:flex-row flex-col justify-center items-center w-full xl:w-[400px] lg:w-[600px] h-auto ">
@@ -174,7 +175,7 @@ const Home = () => {
                         <img src="./src/assets/ExplosionStack.png" />
                     </div>
                 </div>
-                <div id="customization-module" className="flex lg:flex-row flex-col justify-center items-center w-full xl:w-[400px] lg:w-[600px] h-auto">
+                <div id="customization-module" className="flex lg:flex-row flex-col justify-center items-center w-full 2xl:w-[1000px] xl:w-[400px] lg:w-[600px] h-auto">
                     <div id="module-text" className="flex flex-col lg:text-start text-center w-full h-auto p-4">
                         <h2 className="font-black text-[36px] tracking-wide uppercase text-[#FDF0EE]">Battlepass</h2>
                         <p className="text-slate-500 text-[18px] xl:text-[14px] ">Unlock exclusive content, challenges, and rewards seasonally!</p>
@@ -185,13 +186,10 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section id="maps">
-            {/* Gif of Kill on Ai-Mi map */}
+        <MapSection />
+        <footer className="w-screen h-[300px] bg-[#131313]">
 
-            {/* Gif of door hit on any map */}
-
-            {/* Gif of water cannon on Inky map */}
-        </section>
+        </footer>
     </main>
   )
 }
