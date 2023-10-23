@@ -221,7 +221,7 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col gap-y-4 justify-center items-center">
                     <div className="text-white lg:text-[36px] text-[20px] font-bold">
-                        <h2>Join the footbrawl.</h2>
+                        <h2>Connect with us</h2>
                     </div>
                     <div className="flex flex-row text-white lg:text-[36px] text-[24px] gap-x-6">
                         <a href="https://www.odysseyinteractive.gg/verified-creators#twitter-unauth-mask"><ion-icon name="logo-twitter"></ion-icon></a>
