@@ -1,6 +1,5 @@
 import React from 'react'
 import '../index.css'
-import { Avatar } from '@nextui-org/react'
 import { ImageCarousel }  from '../components/ImageCarousel';
 import { CharacterInteractive } from '../components/CharacterInteractive';
 import MapSection from '../components/MapSection';
@@ -14,6 +13,21 @@ import playstationImage from '../assets/playstationbutton.png';
 import steamImage from '../assets/steambutton.png';
 import xboxImage from '../assets/xboxbutton.png';
 import pageDivider from '../assets/pagedivider.png';
+import julietteSkin from '../assets/skins/GamerJuliette.png';
+import aimiSkin from '../assets/skins/IdolAimi.png';
+import estelleSkin from '../assets/skins/OrbEstelle.png';
+import lunaSkin from '../assets/skins/OrbLuna.png';
+import kaiSkin from '../assets/skins/PopKingKai.png';
+import eraSkin from '../assets/skins/RaindropEra.png';
+import aimiSG from '../assets/skins/SGAimi.png';
+import runeSA from '../assets/skins/SARune.png';
+import atlasSW from '../assets/skins/SWAtlas.png';
+import kaiUW from '../assets/skins/UWKai.png';
+import skinPack from '../assets/skins/SkinPack.png';
+import titleStack from '../assets/skins/TitleStack.png';
+import emotionStack from '../assets/EmoticonStack.png';
+import explosionStack from '../assets/ExplosionStack.png';
+import battlePass from '../assets/BattlePass.png';
 
 const Home = () => {
   return (
@@ -79,91 +93,91 @@ const Home = () => {
             <div id="skin-gradient" className="absolute w-full h-[400px]" />
             <div id="skins" className="flex items-center justify-center w-full h-[400px] bg-[#131313] gap-x-[5px]">
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/GamerJuliette.png" className="sm:scale-[5] scale-[10] translate-y-[200px] sm:-translate-x-[35px] -translate-x-[30px]" />
+                    <img src={julietteSkin} className="sm:scale-[5] scale-[10] translate-y-[200px] sm:-translate-x-[35px] -translate-x-[30px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/IdolAimi.png" className="sm:scale-[5] scale-[10] translate-y-[180px]" />
+                    <img src={aimiSkin} className="sm:scale-[5] scale-[10] translate-y-[180px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/OrbEstelle.png" className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
+                    <img src={estelleSkin} className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/OrbLuna.png" className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
+                    <img src={lunaSkin} className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/PopKingKai.png" className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
+                    <img src={kaiSkin} className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/RaindropEra.png" className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
+                    <img src={eraSkin} className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SGaimi.png" className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
+                    <img src={aimiSG} className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SARune.png" className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
+                    <img src={runeSA} className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SWAtlas.png" className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
+                    <img src={atlasSW} className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
                 </div>
                 <div id="skin" className="w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
+                    <img src={kaiUW} className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
                 </div>
 
                 {/* Hidden until lg */}
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/GamerJuliette.png" className="sm:scale-[5] scale-[10] translate-y-[200px] sm:-translate-x-[35px] -translate-x-[30px]" />
+                    <img src={julietteSkin} className="sm:scale-[5] scale-[10] translate-y-[200px] sm:-translate-x-[35px] -translate-x-[30px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/IdolAimi.png" className="sm:scale-[5] scale-[10] translate-y-[180px]" />
+                    <img src={aimiSkin} className="sm:scale-[5] scale-[10] translate-y-[180px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/OrbEstelle.png" className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
+                    <img src={estelleSkin} className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/OrbLuna.png" className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
+                    <img src={lunaSkin} className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/PopKingKai.png" className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
+                    <img src={kaiSkin} className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/RaindropEra.png" className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
+                    <img src={eraSkin} className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SGaimi.png" className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
+                    <img src={aimiSG} className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SARune.png" className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
+                    <img src={runeSA} className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SWAtlas.png" className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
+                    <img src={atlasSW} className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
                 </div>
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
+                    <img src={kaiUW} className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
                 </div>
                 {/* Hidden until 2440px */}
                 <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/OrbEstelle.png" className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
+                    <img src={estelleSkin} className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
                 </div>
                 <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/OrbLuna.png" className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
+                    <img src={lunaSkin} className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
                 </div>
                 <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/PopKingKai.png" className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
+                    <img src={kaiSkin} className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
                 </div>
                 <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/RaindropEra.png" className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
+                    <img src={eraSkin} className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
                 </div>
                 <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SGaimi.png" className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
+                    <img src={aimiSG} className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
                 </div>
                 <div id="skin" className="4xl:inlinee hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SARune.png" className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
+                    <img src={runeSA} className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
                 </div>
                 <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/SWAtlas.png" className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
+                    <img src={atlasSW} className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
                 </div>
                 <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
-                    <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
+                    <img src={kaiUW} className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
                 </div>
                 
             </div>
@@ -181,7 +195,7 @@ const Home = () => {
                         <p className="text-slate-500 text-[18px] xl:text-[14px] ">Customize your character's appearance and showcase your unique style!</p>
                     </div>
                     <div id="module-img" className="">
-                        <img src="./src/assets/skins/SkinsPack.png" />
+                        <img src={skinPack} />
                     </div>
                 </div>
                 <div id="customization-module" className="flex lg:flex-row flex-col justify-center items-center w-full xl:w-[400px] lg:w-[600px] h-auto ">
@@ -190,7 +204,7 @@ const Home = () => {
                         <p className="text-slate-500 text-[18px] xl:text-[14px] ">Elevate your in-game status with exclusive titles.</p>
                     </div>
                     <div id="module-img" className="">
-                        <img src="./src/assets/TitleStack.png" />
+                        <img src={titleStack} />
                     </div>
                 </div>
                 <div id="customization-module" className="flex lg:flex-row flex-col justify-center items-center w-full xl:w-[400px] lg:w-[600px] h-auto ">
@@ -199,7 +213,7 @@ const Home = () => {
                         <p className="text-slate-500 text-[18px] xl:text-[14px] ">Express yourself with fun emotes!</p>
                     </div>
                     <div id="module-img" className="">
-                        <img src="./src/assets/EmoticonStack.png" />
+                        <img src={emotionStack} />
                     </div>
                 </div>
                 <div id="customization-module" className="flex lg:flex-row flex-col justify-center items-center w-full xl:w-[400px] lg:w-[600px] h-auto">
@@ -208,7 +222,7 @@ const Home = () => {
                         <p className="text-slate-500 text-[18px] xl:text-[14px] ">Make every goal a memorable spectacle.</p>
                     </div>
                     <div id="module-img" className="">
-                        <img src="./src/assets/ExplosionStack.png" />
+                        <img src={explosionStack} />
                     </div>
                 </div>
                 <div id="customization-module" className="flex lg:flex-row flex-col justify-center items-center w-full 2xl:w-[1000px] xl:w-[400px] lg:w-[600px] h-auto">
@@ -217,7 +231,7 @@ const Home = () => {
                         <p className="text-slate-500 text-[18px] xl:text-[14px] ">Unlock exclusive content, challenges, and rewards seasonally!</p>
                     </div>
                     <div id="module-img" className="">
-                        <img src="./src/assets/BattlePass.png" />
+                        <img src={battlePass} />
                     </div>
                 </div>
             </div>
