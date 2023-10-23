@@ -23,8 +23,8 @@ import aimiSG from '../assets/skins/SGAimi.png';
 import runeSA from '../assets/skins/SARune.png';
 import atlasSW from '../assets/skins/SWAtlas.png';
 import kaiUW from '../assets/skins/UWKai.png';
-import skinPack from '../assets/skins/SkinPack.png';
-import titleStack from '../assets/skins/TitleStack.png';
+import skinPack from '../assets/skins/SkinsPack.png'
+import titleStack from '../assets/TitleStack.png';
 import emotionStack from '../assets/EmoticonStack.png';
 import explosionStack from '../assets/ExplosionStack.png';
 import battlePass from '../assets/BattlePass.png';
