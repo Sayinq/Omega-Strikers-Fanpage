@@ -59,7 +59,7 @@ const Home = () => {
         </section>
         
         {/* Character section, needs character changing component */}
-        <img src="./src/assets/pagedivider.png" className="absolute left-0 3xl:-translate-y-[55px] 2xl:-translate-y-[70px] xl:-translate-y-[90px] lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
+        <img src="./src/assets/pagedivider.png" className="absolute left-0 4xl:-translate-y-[100px] 3xl:-translate-y-[55px] 2xl:-translate-y-[70px] xl:-translate-y-[90px] lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
 
         <CharacterInteractive />
 
@@ -130,6 +130,32 @@ const Home = () => {
                 <div id="skin" className="lg:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
                     <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
                 </div>
+                {/* Hidden until 2440px */}
+                <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/OrbEstelle.png" className="sm:scale-[4] scale-[6] translate-y-[205px] translate-x-[25px]" />
+                </div>
+                <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/OrbLuna.png" className="sm:scale-[5] scale-[10] translate-y-[175px] translate-x-[10px]" />
+                </div>
+                <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/PopKingKai.png" className="sm:scale-[5] scale-[10] translate-y-[215px] -translate-x-[45px]" />
+                </div>
+                <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/RaindropEra.png" className="sm:scale-[5] scale-[8] translate-y-[155px] -translate-x-[55px]" />
+                </div>
+                <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/SGaimi.png" className="sm:scale-[5] scale-[8] translate-y-[185px] -translate-x-[25px]" />
+                </div>
+                <div id="skin" className="4xl:inlinee hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/SARune.png" className="sm:scale-[5] scale-[8] translate-y-[175px] translate-x-[35px]" />
+                </div>
+                <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/SWAtlas.png" className="sm:scale-[5] scale-[8] translate-y-[175px] -translate-x-[5px]" />
+                </div>
+                <div id="skin" className="4xl:inline hidden w-[100px] h-[408px] rotate-3 bg-black overflow-hidden">
+                    <img src="./src/assets/skins/UWKai.png" className="sm:scale-[5] scale-[8] translate-y-[200px] -translate-x-[0px]" />
+                </div>
+                
             </div>
             <div id="skin-text" className="flex flex-col absolute justify-center items-center w-full h-fit -translate-y-[45px] point-events-none select-none">
                 <h2 className="font-bold lg:text-[68px] text-[48px] text-[#FDF0EE]">Keep it fresh</h2>
@@ -187,8 +213,30 @@ const Home = () => {
             </div>
         </section>
         <MapSection />
-        <footer className="w-screen h-[300px] bg-[#131313]">
-
+        <footer className="flex flex-col w-screen h-[300px] items-center justify-evenly bg-[#131313] px-[1.25rem] gap-x-4">
+            <div className="flex flex-row items-center justify-evenly w-full max-w-[1536px] py-8">
+                <div className="flex flex-col justify-center items-center gap-y-2">
+                    <img src="./src/assets/OdyLogo.png" className="lg:w-24 lg:h-24 w-12 h-12" />
+                    <h1 className="text-white font-bold lg:text-[24px] tracking-[0.125rem]">Odyssey</h1>
+                </div>
+                <div className="flex flex-col gap-y-4 justify-center items-center">
+                    <div className="text-white lg:text-[36px] text-[20px] font-bold">
+                        <h2>Join the footbrawl.</h2>
+                    </div>
+                    <div className="flex flex-row text-white lg:text-[36px] text-[24px] gap-x-6">
+                        <a href="https://www.odysseyinteractive.gg/verified-creators#twitter-unauth-mask"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.linkedin.com/company/odysseyinteractive"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://www.youtube.com/c/omegastrikers"><ion-icon name="logo-youtube"></ion-icon></a>
+                        <a href="https://discord.gg/omegastrikers"><ion-icon name="logo-discord"></ion-icon></a>
+                        <a href="https://www.twitch.tv/directory/game/Omega%20Strikers"><ion-icon name="logo-twitch"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-row gap-x-10 text-white lg:text-[18px] tracking-[0.25rem]">
+                <a href=""><span>Terms of Service</span></a>
+                <a href=""><span>Privacy Policy</span></a>
+                <a href=""><span>Player Support</span></a>
+            </div>
         </footer>
     </main>
   )

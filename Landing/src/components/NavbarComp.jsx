@@ -16,13 +16,13 @@ export default function NavbarComp() {
         </NavbarBrand>
         <NavbarContent justify="end" className="sm:gap-x-8">
         <NavbarItem>
-            <span className="text-white font-semibold text-2xl">Link</span>
+            <span className="text-white font-semibold text-2xl">Play</span>
           </NavbarItem>
           <NavbarItem>
-            <span className="text-white font-semibold text-2xl">Link</span>
+            <span className="text-white font-semibold text-2xl">Strikers</span>
           </NavbarItem>
           <NavbarItem>
-            <span className="text-white font-semibold text-2xl">Link</span>
+            <span className="text-white font-semibold text-2xl">Content</span>
           </NavbarItem>
         </NavbarContent>
       </Navbar>
