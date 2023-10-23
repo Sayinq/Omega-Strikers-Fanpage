@@ -4,13 +4,23 @@ import { Avatar } from '@nextui-org/react'
 import { ImageCarousel }  from '../components/ImageCarousel';
 import { CharacterInteractive } from '../components/CharacterInteractive';
 import MapSection from '../components/MapSection';
+import odyLogo from '../assets/OdyLogo.png';
+import heroLogo from '../assets/HeroLogo.png';
+import xImage from '../assets/characters/X.png';
+import appleImage from '../assets/applebutton.png';
+import googleImage from '../assets/googlebutton.png';
+import nintendoImage from '../assets/nintendobutton.png';
+import playstationImage from '../assets/playstationbutton.png';
+import steamImage from '../assets/steambutton.png';
+import xboxImage from '../assets/xboxbutton.png';
+import pageDivider from '../assets/pagedivider.png';
 
 const Home = () => {
   return (
     <main className="overflow-x-hidden">
         {/* Hero Section, may change to just an image class */}
         <section id="hero" className="flex w-screen h-screen sm:max-h-[640px] max-h-[400px] justify-center items-center bg-[url('./src/assets/HeroArt.jpg')] bg-center bg-cover">
-            <img src="./src/assets/HeroLogo.png" className="2xl:flex hidden h-auto max-w-[600px] translate-y-8" />
+            <img src={heroLogo} className="2xl:flex hidden h-auto max-w-[600px] translate-y-8" />
         </section>
 
         {/* Make this into infinite scrolling component */}
@@ -23,8 +33,8 @@ const Home = () => {
         {/* Footbrawl area, transparent with our logo splash art as the main bg*/}
         <section id="footbrawl" className="flex flex-col w-screen h-auto justify-start items-center 2xl:-mt-32 xl:-mt-12 lg:-mt-16 sm:-mt-20 -mt-28 gap-y-4 px-4">
             <div id="footbrawl-header" className="flex flex-col items-center justify-center">
-                <img id="x" src="./src/assets/characters/X.png" className="2xl:w-96  -translate-x-[5px] 2xl:h-96 xl:w-64 xl:h-64 w-48 h-48 grayscale opacity-50" />
-                <img id="x" src="./src/assets/characters/X.png" className="absolute -translate-y-6 2xl:w-96 2xl:h-96 xl:w-64 xl:h-64 w-48 h-48" />
+                <img id="x" src={xImage} className="2xl:w-96  -translate-x-[5px] 2xl:h-96 xl:w-64 xl:h-64 w-48 h-48 grayscale opacity-50" />
+                <img id="x" src={xImage} className="absolute -translate-y-6 2xl:w-96 2xl:h-96 xl:w-64 xl:h-64 w-48 h-48" />
                 <div>
                     <h2 id="footbrawl-text" className="font-black lg:text-[70px] md:text-[60px] sm:text-5xl text-3xl bg-gradient-to-b from-[#E01377] to-[#AF0F5C] bg-clip-text text-transparent uppercase drop-shadow-md pb-4">Join the footbrawl!</h2>
                 </div>
@@ -49,21 +59,21 @@ const Home = () => {
                 />
             </div>
             <div id="download-links" className="flex flex-wrap justify-center items-center w-full h-auto py-2 lg:pb-16 pb-6">
-                <a href=""><img src="./src/assets/applebutton.png" className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
-                <a href=""><img src="./src/assets/googlebutton.png" className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
-                <a href=""><img src="./src/assets/nintendobutton.png" className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
-                <a href=""><img src="./src/assets/playstationbutton.png" className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
-                <a href=""><img src="./src/assets/steambutton.png" className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
-                <a href=""><img src="./src/assets/xboxbutton.png" className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
+                <a href=""><img src={appleImage} className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
+                <a href=""><img src={googleImage} className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
+                <a href=""><img src={nintendoImage} className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
+                <a href=""><img src={playstationImage} className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
+                <a href=""><img src={steamImage} className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
+                <a href=""><img src={xboxImage} className="sm:max-w-[250px] max-w-[300px] hover:scale-110 transition-all duration-100 ease-in-out"/></a>
             </div>
         </section>
         
         {/* Character section, needs character changing component */}
-        <img src="./src/assets/pagedivider.png" className="absolute left-0 4xl:-translate-y-[100px] 3xl:-translate-y-[55px] 2xl:-translate-y-[70px] xl:-translate-y-[90px] lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
+        <img src={pageDivider} className="absolute left-0 4xl:-translate-y-[100px] 3xl:-translate-y-[55px] 2xl:-translate-y-[70px] xl:-translate-y-[90px] lg:-translate-y-[80px] sm:-translate-y-[48px] -translate-y-8 w-screen h-fit rotate-180" />
 
         <CharacterInteractive />
 
-        <img id="second-divider" src="./src/assets/pagedivider.png" className="absolute left-0 -translate-y-[5px] w-screen h-fit" />
+        <img id="second-divider" src={pageDivider} className="absolute left-0 -translate-y-[5px] w-screen h-fit" />
         {/* Add scalability for scrolling to see more skins */}
         <section id="skin-showcase" className="2xl:mt-2 w-screen h-auto overflow-y-hidden overflow-x-hidden">
             <div id="skin-gradient" className="absolute w-full h-[400px]" />
@@ -216,7 +226,7 @@ const Home = () => {
         <footer className="flex flex-col w-screen h-[300px] items-center justify-evenly bg-[#131313] px-[1.25rem] gap-x-4">
             <div className="flex flex-row items-center justify-evenly w-full max-w-[1536px] py-8">
                 <div className="flex flex-col justify-center items-center gap-y-2">
-                    <img src="./src/assets/OdyLogo.png" className="lg:w-24 lg:h-24 w-12 h-12" />
+                    <img src={odyLogo} className="lg:w-24 lg:h-24 w-12 h-12" />
                     <h1 className="text-white font-bold lg:text-[24px] tracking-[0.125rem]">Odyssey</h1>
                 </div>
                 <div className="flex flex-col gap-y-4 justify-center items-center">
