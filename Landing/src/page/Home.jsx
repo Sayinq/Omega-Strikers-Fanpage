@@ -28,12 +28,17 @@ import titleStack from '../assets/TitleStack.png';
 import emotionStack from '../assets/EmoticonStack.png';
 import explosionStack from '../assets/ExplosionStack.png';
 import battlePass from '../assets/BattlePass.png';
+import heroArt from '../assets/HeroArt.jpg';
 
 const Home = () => {
+    const sectionStyle = {
+        background: `url(${heroArt}) center/cover`,
+    };
+
   return (
     <main className="overflow-x-hidden">
         {/* Hero Section, may change to just an image class */}
-        <section id="hero" className="flex w-screen h-screen sm:max-h-[640px] max-h-[400px] justify-center items-center bg-[url('./src/assets/HeroArt.jpg')] bg-center bg-cover">
+        <section id="hero" style={sectionStyle} className="flex w-screen h-screen sm:max-h-[640px] max-h-[400px] justify-center items-center">
             <img src={heroLogo} className="2xl:flex hidden h-auto max-w-[600px] translate-y-8" />
         </section>
 

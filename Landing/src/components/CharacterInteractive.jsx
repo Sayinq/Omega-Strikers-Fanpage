@@ -3,120 +3,141 @@ import { Avatar } from '@nextui-org/react'
 import { AnimatePresence, motion } from 'framer-motion';
 import { fadeAnimation, headContainerAnimation, headTextAnimation } from '../config/motion.js';
 
+{/* Characters */}
+import aimiCharacter from '../assets/characters/Aimi.png';
+import asherCharacter from '../assets/characters/Asher.png';
+import atlasCharacter from '../assets/characters/Atlas.png';
+import drekarCharacter from '../assets/characters/Drekar.png';
+import dubuCharacter from '../assets/characters/Dubu.png';
+import eraCharacter from '../assets/characters/Era.png';
+import estelleCharacter from '../assets/characters/Estelle.png';
+import finiiCharacter from '../assets/characters/Finii.png';
+import julietteCharacter from '../assets/character/Juliette.png';
+import junoCharacter from '../assets/characters/Juno.png';
+import kaiCharacter from '../assets/characters/Kai.png';
+import kazanCharacter from '../assets/characters/Kazan.png';
+import lunaCharacter from '../assets/characters/Luna.png';
+import octaviaCharacter from '../assets/characters/Octavia.png';
+import rasmusCharacter from '../assets/characters/Rasmus.png';
+import runeCharacter from '../assets/characters/Rune.png';
+import vyceCharacter from '../assets/characters/Vyce.png';
+import xCharacter from '../assets/characters/X.png';
+import zentaroCharacter from '../assets/characters/Zentaro.png';
+
 const characters = [
     {
         id: "Aimi",
         name: "Ai.Mi",
         desc: "A glitch mage who excels at controlling the field with precise attacks from a distance.",
-        src: "./src/assets/characters/Aimi.png",
+        src: {aimiCharacter},
     },
     {
         id: "Asher",
         name: "Asher",
         desc: "A warm-spirited warrior who charged in with a pair of high-tech shields.",
-        src: "./src/assets/characters/Asher.png",
+        src: {asherCharacter},
     },
     {
         id: "Atlas",
         name: "Atlas",
         desc: "A cosmic guardian who bends space-time to save his allies from danger.",
-        src: "./src/assets/characters/Atlas.png",
+        src: {atlasCharacter},
     },
     {
         id: "Drekar",
         name: "Drekar",
         desc: "A soldier assassin who uses stealth and slows to disrupt enemies.",
-        src: "./src/assets/characters/Drekar.png",
+        src: {drekarCharacter},
     },
     {
         id: "Dubu",
         name: "Dubu",
         desc: "A hard-hittin (but bluffy) bodyguard and defender.",
-        src: "./src/assets/characters/Dubu.png",
+        src: {dubuCharacter},
     },
     {
         id: "Era",
         name: "Era",
         desc: "A shy witch who conjures magical spells to empower and hasten her team.",
-        src: "./src/assets/characters/Era.png",
+        src: {eraCharacter},
     },
     {
         id: "Estelle",
         name: "Estelle",
         desc: "A focused sniper who applies pressure from afar.",
-        src: "./src/assets/characters/Estelle.png",
+        src: {estelleCharacter},
     },
     {
         id: "Finii",
         name: "Finii",
         desc: "A mischievous magician who can summon gravity wells and help her team inflict major damage to enemies.",
-        src: "./src/assets/characters/Finii.png",
+        src: {finiiCharacter},
     },
     {
         id: "Juliette",
         name: "Juliette",
         desc: "An agile brawler who's not afriad to throw the first punch.",
-        src: "./src/assets/characters/Juliette.png",
+        src: {julietteCharacter},
     },
     {
         id: "Juno",
         name: "Juno",
         desc: "A curious alien who summons blobbos to help her fight and score goals.",
-        src: "./src/assets/characters/Juno.png",
+        src: {junoCharacter},
     },
     {
         id: "Kai",
         name: "Kai",
         desc: "A speed, fireball-slinging skirmisher who wins in style.",
-        src: "./src/assets/characters/Kai.png",
+        src: {kaiCharacter},
     },
     {
         id: "Kazan",
         name: "Kazan",
         desc: "A wild stance dancer who utilizies an umbrella to do his dirty deeds.",
-        src: "./src/assets/characters/Kazan.png",
+        src: {kazanCharacter},
     },
     {
         id: "Luna",
         name: "Luna",
         desc: "An explosive inventor who bombards enemies before rocketing herself into action.",
-        src: "./src/assets/characters/Luna.png",
+        src: {lunaCharacter},
     },
     {
         id: "Octavia",
         name: "Octavia",
         desc: "An evasive skirmisher who uses speed and repeated attacks to disrupt the field.",
-        src: "./src/assets/characters/Octavia.png",
+        src: {octaviaCharacter},
     },
     {
         id: "Rasmus",
         name: "Rasmus",
         desc: "A flashy mid-range skirmisher who can pull enemies (and the Core) towards himself.",
-        src: "./src/assets/characters/Rasmus.png",
+        src: {rasmusCharacter},
     },
     {
         id: "Rune",
         name: "Rune",
         desc: "A tricky caster who can teleport and banish enemies to another realm.",
-        src: "./src/assets/characters/Rune.png",
+        src: {runeCharacter},
     },
     {
         id: "Vyce",
         name: "Vyce",
         desc: "A supercharged rocker who uses lightning energy to cause chaos and blast foes.",
-        src: "./src/assets/characters/Vyce.png",
+        src: {vyceCharacter},
     },
     {
         id: "X",
         name: "X",
         desc: "A straightforward brute who loves to brawl anyone and everyone.",
-        src: "./src/assets/characters/X.png",
+        src: {xCharacter},
     },
     {
         id: "Zentaro",
         name: "Zentaro",
         desc: "A young and nimble swordsman who slashes at foes while eluding their attacks.",
-        src: "./src/assets/characters/Zentaro.png",
+        src: {zentaroCharacter},
     },
   ];
   

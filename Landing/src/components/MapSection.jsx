@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
 
+import ahtenMap from '../assets/maps/AhtenCity.png';
+import aimiMap from '../assets/maps/AimiApp.png';
+import atlasMap from '../assets/maps/AtlasLab.png';
+import demonMap from '../assets/maps/DemonDais.png';
+import nightMap from '../assets/maps/NightMarket.png';
+import oniMap from '../assets/maps/OniVillage.png';
+
 const MapSection = () => {
   const backgrounds = [
-    './src/assets/maps/AhtenCity.png',
-    './src/assets/maps/AimiApp.png',
-    './src/assets/maps/AtlasLab.png',
-    './src/assets/maps/DemonDais.png',
-    './src/assets/maps/NightMarket.png',
-    './src/assets/maps/OniVillage.png',
+    {ahtenMap},
+    {aimiMap},
+    {demonMap},
+    {nightMap},
+    {atlasMap},
+    {oniMap},
   ];
 
   const [currentBackground, setCurrentBackground] = useState(0);
