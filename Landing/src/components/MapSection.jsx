@@ -9,12 +9,12 @@ import oniMap from '../assets/maps/OniVillage.png';
 
 const MapSection = () => {
   const backgrounds = [
-    {ahtenMap},
-    {aimiMap},
-    {demonMap},
-    {nightMap},
-    {atlasMap},
-    {oniMap},
+    ahtenMap,
+    aimiMap,
+    demonMap,
+    nightMap,
+    atlasMap,
+    oniMap,
   ];
 
   const [currentBackground, setCurrentBackground] = useState(0);
