@@ -12,7 +12,7 @@ import dubuCharacter from '../assets/characters/Dubu.png';
 import eraCharacter from '../assets/characters/Era.png';
 import estelleCharacter from '../assets/characters/Estelle.png';
 import finiiCharacter from '../assets/characters/Finii.png';
-import julietteCharacter from '../assets/character/Juliette.png';
+import julietteCharacter from '../assets/characters/Juliette.png';
 import junoCharacter from '../assets/characters/Juno.png';
 import kaiCharacter from '../assets/characters/Kai.png';
 import kazanCharacter from '../assets/characters/Kazan.png';
