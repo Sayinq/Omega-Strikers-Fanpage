@@ -3,8 +3,8 @@ import '../index.css'
 import { ImageCarousel }  from '../components/ImageCarousel';
 import { CharacterInteractive } from '../components/CharacterInteractive';
 import MapSection from '../components/MapSection';
-import odyLogo from '../assets/OdyLogo.png';
-import heroLogo from '../assets/HeroLogo.png';
+import odyLogo from '../assets/OdyLogo.webp';
+import heroLogo from '../assets/HeroLogo.webp';
 import xImage from '../assets/characters/X.png';
 import appleImage from '../assets/applebutton.png';
 import googleImage from '../assets/googlebutton.png';
@@ -28,7 +28,7 @@ import titleStack from '../assets/TitleStack.png';
 import emotionStack from '../assets/EmoticonStack.png';
 import explosionStack from '../assets/ExplosionStack.png';
 import battlePass from '../assets/BattlePass.png';
-import heroArt from '../assets/HeroArt.jpg';
+import heroArt from '../assets/HeroArt.webp';
 
 const Home = () => {
     const sectionStyle = {

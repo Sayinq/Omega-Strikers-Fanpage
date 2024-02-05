@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-import ahtenMap from '../assets/maps/AhtenCity.png';
-import aimiMap from '../assets/maps/AimiApp.png';
-import atlasMap from '../assets/maps/AtlasLab.png';
-import demonMap from '../assets/maps/DemonDais.png';
-import nightMap from '../assets/maps/NightMarket.png';
-import oniMap from '../assets/maps/OniVillage.png';
+import ahtenMap from '../assets/maps/AhtenCity.webp';
+import aimiMap from '../assets/maps/AimiApp.webp';
+import atlasMap from '../assets/maps/AtlasLab.webp';
+import demonMap from '../assets/maps/DemonDais.webp';
+import nightMap from '../assets/maps/NightMarket.webp';
+import oniMap from '../assets/maps/OniVillage.webp';
 
 const MapSection = () => {
   const backgrounds = [
@@ -32,17 +32,24 @@ const MapSection = () => {
   return (
     <section
       id="maps"
-      className="w-screen h-screen bg-cover"
+      className="relative w-screen h-screen bg-cover bg-[#d2d2d2] overflow-hidden"
       style={{
         backgroundImage: `url(${backgrounds[currentBackground]})`,
         backgroundPosition: 'center',
       }}
     >
-      <div className="flex justify-center items-center w-screen- h-screen">
-        <h2 id="map-header" className="font-black lg:text-9xl sm:text-6xl text-4xl uppercase text-white text-center pointer-events-none select-none">
-            Variety of maps
-            <br />
-            To fire you up!
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-black/60 z-10"></div>
+
+      {/* Content */}
+      <div className="relative flex justify-center items-center w-full h-full z-[20]">
+        <h2
+          id="map-header"
+          className="font-black lg:text-9xl sm:text-6xl text-4xl uppercase text-white text-center pointer-events-none select-none"
+        >
+          Variety of maps
+          <br />
+          To fire you up!
         </h2>
       </div>
     </section>

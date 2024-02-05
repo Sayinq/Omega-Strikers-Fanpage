@@ -6,7 +6,7 @@ import {
     NavbarItem
 } from '@nextui-org/react'
 import '../index.css'
-import odyLogo from '../assets/OdyLogo.png';
+import odyLogo from '../assets/OdyLogo.webp';
 
 export default function NavbarComp() {
   const scrollToSection = (sectionId) => {
@@ -25,7 +25,7 @@ export default function NavbarComp() {
         <NavbarContent justify="end" className="sm:gap-x-8">
         <NavbarItem>
             <span 
-              className="text-white font-semibold text-2xl cursor-pointer select-none hover:text-[#E01377]/80"
+              className="text-white font-semibold text-2xl cursor-pointer select-none hover:text-[#E01377]/80 transition-all duration-300"
               onClick={() => scrollToSection('footbrawl')}  
             >
                 Play
@@ -33,7 +33,7 @@ export default function NavbarComp() {
           </NavbarItem>
           <NavbarItem>
             <span 
-              className="text-white font-semibold text-2xl cursor-pointer select-none hover:text-[#E01377]/80"
+              className="text-white font-semibold text-2xl cursor-pointer select-none hover:text-[#E01377]/80 transition-all duration-300"
               onClick={() => scrollToSection('characters')}  
             >
                 Strikers
@@ -41,7 +41,7 @@ export default function NavbarComp() {
           </NavbarItem>
           <NavbarItem>
             <span 
-              className="text-white font-semibold text-2xl cursor-pointer select-none hover:text-[#E01377]/80"
+              className="text-white font-semibold text-2xl cursor-pointer select-none hover:text-[#E01377]/80 transition-all duration-300"
               onClick={() => scrollToSection('skin-showcase')}  
             >
                 Content
